@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="#FF0099"
+        android:gravity="center">
+    <EditText
+            android:id="@+id/editID"
+            android:hint="아이디"
+            android:paddingLeft="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#FFFFFF"
+            android:singleLine="true"/>
+    <EditText
+            android:id="@+id/editPass"
+            android:hint="패스워드"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="5sp"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#FFFFFF"
+            android:singleLine="true"
+            android:password="true"/>
+    <Button
+            android:id="@+id/btnLogin"
+            android:background="@drawable/btnbtn"
+            android:text="로그인"
+            android:layout_marginTop="5sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"/>
+</LinearLayout>
