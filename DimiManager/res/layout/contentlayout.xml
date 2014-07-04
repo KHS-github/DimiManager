@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
             android:background="#FF0099">
             <Button
-                    android:background="@drawable/menubtn"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:background="@drawable/menu_off"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:layout_alignParentLeft="true"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:text="DManager" android:textColor="#FFFFFF" android:textSize="25dp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"/>
     </RelativeLayout>
-    <com.example.DimiManager.layout.TabBar
-            android:id="@+id/tabBar"
-            android:layout_height="wrap_content"
+    <fragment
+            class="com.example.DimiManager.layout.TabsFragment"
+            android:id="@+id/tabs_fragment"
             android:layout_width="match_parent"
-            android:layout_gravity="top"/>
+            android:layout_height="match_parent"/>
 </LinearLayout>
